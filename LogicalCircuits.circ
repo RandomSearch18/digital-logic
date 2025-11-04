@@ -65,6 +65,10 @@
       <a name="label" val="Data"/>
     </comp>
     <comp lib="0" loc="(230,150)" name="Clock"/>
+    <comp lib="0" loc="(250,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+    </comp>
     <comp lib="0" loc="(280,190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Clear"/>
@@ -85,13 +89,32 @@
       <a name="label" val="Not_Q"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(400,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q_glitch"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(320,360)" name="NOT Gate"/>
+    <comp lib="1" loc="(380,340)" name="AND Gate"/>
+    <comp lib="11" loc="(160,520)" name="Rv32im"/>
+    <comp lib="11" loc="(790,680)" name="Socmem">
+      <a name="MemSize" val="26"/>
+    </comp>
+    <comp lib="11" loc="(860,410)" name="SocVga"/>
     <comp lib="4" loc="(260,100)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
     <wire from="(230,110)" to="(250,110)"/>
     <wire from="(230,150)" to="(250,150)"/>
+    <wire from="(250,320)" to="(270,320)"/>
+    <wire from="(270,320)" to="(270,360)"/>
+    <wire from="(270,320)" to="(330,320)"/>
+    <wire from="(270,360)" to="(290,360)"/>
     <wire from="(280,160)" to="(280,190)"/>
     <wire from="(280,70)" to="(280,100)"/>
+    <wire from="(320,360)" to="(330,360)"/>
+    <wire from="(380,340)" to="(400,340)"/>
   </circuit>
   <circuit name="BitwiseLogicUnit">
     <a name="appearance" val="logisim_evolution"/>
